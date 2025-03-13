@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/languages"
+        android:layout_marginTop="19dp"/>
+
+    <EditText
+        android:id="@+id/codeEditor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Write your code here"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/userInputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Input"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/compileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compile and Run" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:paddingTop="20dp" />
+</LinearLayout>
